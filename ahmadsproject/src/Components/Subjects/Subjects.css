@@ -1,0 +1,12 @@
+.tableUserInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    border: 2px solid skyblue;
+    margin-top: 10px;
+}
+.tableUserInfo1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    margin-bottom: 30px;
+    border: 2px solid skyblue;
+}
