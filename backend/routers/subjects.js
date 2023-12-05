@@ -1,0 +1,11 @@
+const express = require("express")
+const authintication = require("../middlewares/authentication")
+const { getAllSubjects, addNewSubject, getAllSubjectsForSpeceficUser, getAllSubjectsWithUsers, updateMark, addNewSubjectWithoutUser } = require("../controllers/subjects")
+const subjectsRouter = express.Router()
+subjectsRouter.get("/",getAllSubjects)
+subjectsRouter.post("/",addNewSubject)
+subjectsRouter.get("/:user_id",getAllSubjectsForSpeceficUser)
+subjectsRouter.get("/sub/user",getAllSubjectsWithUsers)
+subjectsRouter.put("/mark/:user_id/:subject",updateMark)
+subjectsRouter.post("/withoutuser",addNewSubjectWithoutUser)
+module.exports = subjectsRouter

@@ -1,0 +1,44 @@
+.allpage{
+margin-top: 25px;
+overflow: hidden;
+}
+.usersDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 100px;
+    overflow: hidden;
+}
+table {
+    position: relative;
+    left: 25%;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+  }
+  
+  td, th {
+    /* color: white; */
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .header1{
+    position: relative;
+    left: 43%;
+  }
+  .header2{
+    position: relative;
+    left: 40%;
+  }
+  .failed{
+    background-color: red;
+    font-weight: bold;
+  }
+  .passed{
+    background-color: greenyellow;
+    font-weight: bold;
+  }
